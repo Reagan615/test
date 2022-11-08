@@ -1,9 +1,5 @@
 @import "./column.css";
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .row {
     display: flex;
@@ -21,7 +17,7 @@ main {
     /* 13.3px 是40 / 3 得来的 ，40 是 3个盒子中间有2个20px的间距*/
     /* width: calc(33.333333% - 13.333333px); */
     width: calc(25% - 20px);
-    height: 200px;
+    height: 260px;
     padding: 10px;
 }
 
@@ -30,25 +26,29 @@ main {
 .one {
     width: 100%;
     height: 100%;
-    background-color: var(--app-blue);
+    background:url(./assets/img/image01.png) no-repeat ;
+    background-size: 100% 100%;
 }
 
 .two {
     width: 100%;
     height: 100%;
-    background-color: var(--app-orange);
+    background:url(./assets/img/image02.png) no-repeat ;
+    background-size: 100% 100%;
 }
 
 .three {
     width: 100%;
     height: 100%;
-    background-color: var(--app-green);
+    background:url(./assets/img/image03.png) no-repeat ;
+    background-size: 100% 100%;
 }
 
 .four {
     width: 100%;
     height: 100%;
-    background-color: var(--app-purple);
+    background:url(./assets/img/image04.png) no-repeat ;
+    background-size: 100% 100%;
 }
 
 
