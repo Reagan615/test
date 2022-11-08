@@ -1,13 +1,22 @@
 @import "./column.css";
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .row {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: white;
     padding: 10px;
 }
 
 .column {
     display: flex;
+    justify-content: center;
     flex-grow: 1;
     /* 13.3px 是40 / 3 得来的 ，40 是 3个盒子中间有2个20px的间距*/
     /* width: calc(33.333333% - 13.333333px); */
