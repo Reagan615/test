@@ -1,0 +1,78 @@
+@import "./column.css";
+
+.row {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-grow: 1;
+    /* 13.3px 是40 / 3 得来的 ，40 是 3个盒子中间有2个20px的间距*/
+    /* width: calc(33.333333% - 13.333333px); */
+    width: calc(25% - 20px);
+    height: 200px;
+    padding: 10px;
+}
+
+
+
+.one {
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-blue);
+}
+
+.two {
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-orange);
+}
+
+.three {
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-green);
+}
+
+.four {
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-purple);
+}
+
+
+/* Media queries */
+/* 768px and down */
+@media (max-width: 768px) {
+    /* .one, .two {
+        width: calc(50% - 10px);
+    }
+    .three {
+        width: 100%;
+    } */
+
+    .column {
+        width: calc(50% - 20px);
+    }
+
+    /* .three {
+        width: calc(50% - 10px);
+    }
+
+    .four {
+        width: calc(50% - 10px);
+    } */
+
+    
+
+    
+}
+
+/* 480px and down */
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+}
